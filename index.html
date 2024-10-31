@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+         .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Foto de um gato</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/08/18/18/02/bee-8978619_1280.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Foto de uma abelha</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/11/25/09/33/car-7615816_1280.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Foto de um carro</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Espaçamento entre o carrossel e a seção de cartões -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/24/08/52/birds-8784588_1280.jpg" class="card-img-top" alt="Imagem 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 1</h5>
+                        <p class="card-text">Descrição 1</p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2024/09/17/15/28/mountains-9053961_640.jpg" class="card-img-top" alt="Imagem 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 2</h5>
+                        <p class="card-text">Descrição 2</p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/25/11/34/grebes-7875739_1280.jpg" class="card-img-top" alt="Imagem 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 3</h5>
+                        <p class="card-text">Descrição 3</p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
